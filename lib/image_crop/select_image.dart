@@ -53,6 +53,7 @@ class _SelectImageState extends State<SelectImage> {
               },
               child: const Text('Pick Image')),
 
+
           //for video
           TextButton(onPressed: () {}, child: const Text('Pick Video'))
         ],
