@@ -11,16 +11,15 @@ class SelectImage extends StatefulWidget {
 }
 
 class _SelectImageState extends State<SelectImage> {
-  var size, height, width;
+  var height = 0.0, width = 0.0;
 
   File? image;
 
   @override
   Widget build(BuildContext context) {
     // getting the size of the window
-    size = MediaQuery.of(context).size;
-    height = size.height;
-    width = size.width;
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: AppBar(centerTitle: true, title: const Text('Home Page')),
@@ -52,10 +51,6 @@ class _SelectImageState extends State<SelectImage> {
                 });
               },
               child: const Text('Pick Image')),
-
-
-          //for video
-          TextButton(onPressed: () {}, child: const Text('Pick Video'))
         ],
       ),
     );
