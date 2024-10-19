@@ -65,9 +65,9 @@ _cropImage(XFile pickedFile) async {
   );
 
   if (croppedFile!.path.isNotEmpty) {
+
     // convert into File (XFile to File)
     File imageFile = File(croppedFile.path);
-
     Navigator.pop(getContext, imageFile);
   }
 }
