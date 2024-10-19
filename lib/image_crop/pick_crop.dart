@@ -8,14 +8,13 @@ pickImage(BuildContext context) {
   XFile _pickedFile;
 
   return Column(
-    crossAxisAlignment: CrossAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,S
     mainAxisAlignment: MainAxisAlignment.center,
     mainAxisSize: MainAxisSize.min,
     children: [
       ListTile(
         onTap: () async {
-          final pickedFile =
-              await ImagePicker().pickImage(source: ImageSource.camera);
+          final pickedFile = await ImagePicker().pickImage(source: ImageSource.camera);
           if (pickedFile != null) {
             _pickedFile = pickedFile;
             _cropImage(context, _pickedFile);
