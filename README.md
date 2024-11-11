@@ -14,9 +14,10 @@
 
  <!-- And you have to add this also in the same class -->
 
-    android:name="com.yalantis.ucrop.UCropActivity"
+     <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     
 </div>
 
